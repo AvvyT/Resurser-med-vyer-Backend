@@ -1,0 +1,14 @@
+html
+  head
+   link(rel="stylesheet" href="style.css")
+   title=title
+  body
+   h1 Test form
+   div
+    form(action="/room", method='POST')
+      label(for="name") MyRoom: 
+      input(type="text", placeholder=' Write a room ..', name='name')
+      h2 Rooms
+    ul
+        each item in list
+            li= item
